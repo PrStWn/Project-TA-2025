@@ -1,0 +1,2 @@
+# Project-TA-2025-Publisher
+Project TA ini mengenai Pembuatan Sistem Keamanan Transmisi Data pada sistem IoT yang berbasis perangkat ESP-32 dan DHT-22. Transmisi Data menggunakan broker MQTT pada port 1883 (kenapa menggunakan port Public?? karna dapat mempermudah tujuan dari Project TA ini yaitu menguji sistem keamanan yang dibuat dengan melakukan simulasi serangan MITM).
