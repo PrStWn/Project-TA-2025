@@ -6,7 +6,8 @@ Proses rancangan sistem pada gambar diatas menjelaskan, DHT22 mengukur temperatu
 
 # Instalasi Program Publisher dan Subscriber
 1. untuk program publisher dapat menggunakan software arduino IDE, download file program_publisher_arduino_IDE dan jalankan di software arduino IDE. diperlukan konfigurasi tambahan seperti install board manager, library manager, serta menentukan port, example: COM3 .
-2. untuk program Subscriber dapat menggunakan software node-red, download file flows.json dan import file tersebut pada software node-red.
+2. untuk broker yang digunakan HiveMQ, ataupun dapat menggunakan broker lain sesuai keinginan.
+3. untuk program Subscriber dapat menggunakan software node-red, download file flows.json dan import file tersebut pada software node-red.
  
 # Tahapan proses simulasi MITM attack menggunakan tools MITM Proxy pada sistem keamanan yang dibuat
 Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah terinstall certificate mitmproxy-ca-cert.pem .
