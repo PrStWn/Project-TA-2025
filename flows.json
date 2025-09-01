@@ -1,0 +1,551 @@
+[
+    {
+        "id": "b6add021de815b06",
+        "type": "tab",
+        "label": "Subscriber",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a5948e74b78c064d",
+        "type": "ui_group",
+        "name": "Suhu",
+        "tab": "2b39e3ec949b6b95",
+        "order": 1,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "76325a4a67c93f80",
+        "type": "ui_group",
+        "name": "Kelembaban",
+        "tab": "2b39e3ec949b6b95",
+        "order": 2,
+        "disp": true,
+        "width": 11,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5f75ef55d9b76029",
+        "type": "ui_group",
+        "name": "Checksum SHA-256",
+        "tab": "2b39e3ec949b6b95",
+        "order": 3,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a41d20d250dc7806",
+        "type": "ui_group",
+        "name": "Validasi-Data",
+        "tab": "2b39e3ec949b6b95",
+        "order": 4,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24b86eae4445a429",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2b39e3ec949b6b95",
+        "type": "ui_tab",
+        "name": "Subscriber Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f44ce4c63e73e952",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "689cb96d4b78f203",
+        "type": "ui_gauge",
+        "z": "b6add021de815b06",
+        "name": "",
+        "group": "a5948e74b78c064d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Suhu",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#b30036",
+            "#d41111",
+            "#e2033b"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7c7fdd69616bf0dd",
+        "type": "ui_gauge",
+        "z": "b6add021de815b06",
+        "name": "",
+        "group": "76325a4a67c93f80",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Kelembaban",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#002db3",
+            "#004de6",
+            "#3a4acb"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d3999d506a8f8c93",
+        "type": "join",
+        "z": "b6add021de815b06",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "1",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "ca587ed89c9d5e47",
+                "56fe651a62d8671e"
+            ]
+        ]
+    },
+    {
+        "id": "ca587ed89c9d5e47",
+        "type": "function",
+        "z": "b6add021de815b06",
+        "name": "function validation",
+        "func": "const aeskey = Buffer.from(\"01020304050607080910111213141516\", \"hex\");\nconst iv = Buffer.alloc(16, 0);\nconst preSharedSalt = \"#y0uR$3cr3t54Lt*1sH3R3*\";\n\nlet resendData = global.get(\"resendData\") || {};\n\nfunction calculateChecksum(data) {\n    let hash = crypto.createHash(\"sha256\").update(data, \"utf8\").digest();\n\n    let checksum = \"\";\n    for (let i = 0; i < hash.length; i++) {\n        checksum += hash[i].toString(16);\n    }\n    return checksum;\n}\n\nfunction decryptAES(base64Data,aeskey, iv) {\n    try {\n        const decipher = crypto.createDecipheriv(\"aes-128-cbc\", aeskey, iv);\n        decipher.setAutoPadding(false);\n        let decrypted = decipher.update(Buffer.from(base64Data, \"base64\"));\n        decrypted = Buffer.concat([decrypted, decipher.final()]);\n        return decrypted.toString(\"utf8\").replace(/\\0/g, '').trim();\n    } catch (error) {\n        return null;\n    };\n}\n\nlet encryptedTemp = msg.payload[\"/ESP32/IotTopic/temp\"];\nlet encryptedHum = msg.payload[\"/ESP32/IotTopic/hum\"];\nlet receivedChecksum = msg.payload[\"/ESP32/IotTopic/checksum\"];\nlet id = msg.payload[\"/ESP32/IotTopic/id\"];\n\nlet data = `${encryptedTemp}${encryptedHum}${preSharedSalt}`;\nlet recalculatedChecksum = calculateChecksum(data);\n\nif (recalculatedChecksum !== receivedChecksum) {\n    if (!resendData[id] || resendData[id] !== \"requested\") {\n        resendData[id] = \"request telah dilakukan\";\n        global.set(\"resendDataID\", resendData);\n\n        node.send({ topic: \"/ESP32/IotTopic/resend\", payload: \"resend\" });\n    }\n    msg.payload = `<div style=\"white-space: pre-wrap;\">\n    Status: <b>Data Manipulated!</b><br>\n    Dekripsi: Ciphertext tidak valid, Proses Dekripsi dibatalkan.<br><br>\n    Data:<br>\n        ID${id}<br>\n        EncryptedTemp: ${encryptedTemp}<br>\n        EncryptedHum: ${encryptedHum}<br>\n        Received-Checksum: ${receivedChecksum}<br>\n        Recalculated-Checksum: ${recalculatedChecksum}\n    </div>`;\n    return msg;\n}\n\nif (resendData[id]) {\n    delete resendData[id];\n    global.set(\"resendDataID\", resendData);\n}\n\nlet temp, hum;\ntry {\n    temp = parseFloat(decryptAES(encryptedTemp, aeskey, iv)).toFixed(1);\n    hum = parseFloat(decryptAES(encryptedHum, aeskey, iv)).toFixed(1);\n} catch (err) {\n    msg.payload = `Status: Error<br> Deskripsi: Gagal mendekripsi data. Error: ${err.message}`;\n    return msg;\n}\n\nmsg.payload = `<div style=\"white-space: pre-wrap;\">\n    Status: <b>Data Valid</b><br><br>\n    Data:<br>\n    ID${id}<br>\n    Temperature: ${temp}<br>\n    Humidity: ${hum}<br>\n    Recalculated-Checksum-SHA256: ${recalculatedChecksum}\n    </div>`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "4d1b70056fe77d6c",
+                "e65eb83202ca0bc5",
+                "b26c4e75b159f9e6"
+            ]
+        ]
+    },
+    {
+        "id": "8723b6da01575d28",
+        "type": "function",
+        "z": "b6add021de815b06",
+        "name": "checksum-function",
+        "func": "let checksum = msg.payload;\n\nmsg.payload = \"Received-Checksum-Sha256: \" + checksum;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 480,
+        "wires": [
+            [
+                "09d39c3cdb8bca49"
+            ]
+        ]
+    },
+    {
+        "id": "09d39c3cdb8bca49",
+        "type": "ui_text",
+        "z": "b6add021de815b06",
+        "group": "5f75ef55d9b76029",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Checksum SHA-256",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 840,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4d1b70056fe77d6c",
+        "type": "ui_template",
+        "z": "b6add021de815b06",
+        "group": "a41d20d250dc7806",
+        "name": "Validasi Data",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\" style=\"overflow: hidden; height: 250px;\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "727101c02e54f5a9",
+        "type": "mqtt in",
+        "z": "b6add021de815b06",
+        "name": "",
+        "topic": "/ESP32/IotTopic/hum",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "24b86eae4445a429",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "d3999d506a8f8c93"
+            ]
+        ]
+    },
+    {
+        "id": "0f569c126b541dc4",
+        "type": "mqtt in",
+        "z": "b6add021de815b06",
+        "name": "",
+        "topic": "/ESP32/IotTopic/temp",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "24b86eae4445a429",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "d3999d506a8f8c93"
+            ]
+        ]
+    },
+    {
+        "id": "54d75a3862ed8940",
+        "type": "mqtt in",
+        "z": "b6add021de815b06",
+        "name": "",
+        "topic": "/ESP32/IotTopic/checksum",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "24b86eae4445a429",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 380,
+        "wires": [
+            [
+                "d3999d506a8f8c93",
+                "8723b6da01575d28"
+            ]
+        ]
+    },
+    {
+        "id": "56fe651a62d8671e",
+        "type": "function",
+        "z": "b6add021de815b06",
+        "name": "function decrypt",
+        "func": "const aeskey = Buffer.from(\"01020304050607080910111213141516\", \"hex\");\nconst iv = Buffer.alloc(16, 0);\n\nfunction decryptAES(base64Data, aeskey, iv) {\n    const decipher = crypto.createDecipheriv(\"aes-128-cbc\", aeskey, iv);\n    decipher.setAutoPadding(false);\n    let decrypted = decipher.update(Buffer.from(base64Data, \"base64\"));\n    decrypted = Buffer.concat([decrypted, decipher.final()]);\n    return decrypted.toString(\"utf8\").replace(/\\0/g, '').trim();\n}\n\ntry {\n    let tempEnc = msg.payload[\"/ESP32/IotTopic/temp\"];\n    let humEnc = msg.payload[\"/ESP32/IotTopic/hum\"];\n\n    let temp = parseFloat(decryptAES(tempEnc, aeskey, iv)).toFixed(1);\n    let hum = parseFloat(decryptAES(humEnc, aeskey, iv)).toFixed(1);\n\n    msg.payload = {\n        temp: temp,\n        hum: hum\n    };\n\n    return msg;\n} catch (err) {\n    msg.payload = `Status: Error<br> Deskripsi: Gagal mendekripsi data. Error: ${err.message}`;\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "76e3dbd03a4d45bd",
+                "964cae57385c2f33"
+            ]
+        ]
+    },
+    {
+        "id": "76e3dbd03a4d45bd",
+        "type": "function",
+        "z": "b6add021de815b06",
+        "name": "Decrypt Temperature",
+        "func": "msg.payload = parseFloat(msg.payload.temp);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 80,
+        "wires": [
+            [
+                "689cb96d4b78f203"
+            ]
+        ]
+    },
+    {
+        "id": "964cae57385c2f33",
+        "type": "function",
+        "z": "b6add021de815b06",
+        "name": "Decrypt Humidity",
+        "func": "msg.payload = parseFloat(msg.payload.hum);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 180,
+        "wires": [
+            [
+                "7c7fdd69616bf0dd"
+            ]
+        ]
+    },
+    {
+        "id": "e65eb83202ca0bc5",
+        "type": "mqtt out",
+        "z": "b6add021de815b06",
+        "name": "",
+        "topic": "/ESP32/IotTopic/resend",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "24b86eae4445a429",
+        "x": 1030,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c3e37d641c8af276",
+        "type": "mqtt in",
+        "z": "b6add021de815b06",
+        "name": "",
+        "topic": "/ESP32/IotTopic/id",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "24b86eae4445a429",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "d3999d506a8f8c93"
+            ]
+        ]
+    },
+    {
+        "id": "b26c4e75b159f9e6",
+        "type": "debug",
+        "z": "b6add021de815b06",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 340,
+        "wires": []
+    }
+]
