@@ -36,7 +36,7 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
 <img width="704" height="340" alt="hasil-uji-serangan-data-tampering-pada-dashboard-subscriber" src="https://github.com/user-attachments/assets/139e7f43-eb9a-48fb-9ea2-8457f987eeff" />
 
 # Dokumentasi subscriber melakukan request pengiriman ulang data ke publisher [Log Data Subscriber]
-<img width="214" height="478" alt="image" src="https://github.com/user-attachments/assets/9532a5b0-e02f-4d2d-8dd4-92c181834672" />
+<img width="138" height="308" alt="data-yang-berhasil-diterima-oleh-subscriber-dari-pengiriman-ulang-data" src="https://github.com/user-attachments/assets/7e2be32c-4612-4c59-a451-3915e1ba9082" />
 
 # Dokumentasi publisher mengerimkan ulang data yang direquest oleh subsrcriber [Log Serial Monitor Publisher]
 <img width="699" height="161" alt="image" src="https://github.com/user-attachments/assets/248b5ff7-1115-47d2-9157-29b4c11a512f" />
