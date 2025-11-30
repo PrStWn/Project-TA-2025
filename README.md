@@ -22,6 +22,7 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
 - Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target. dan untuk melakukan intercept pada salah satu data komunikasi diperlukan menggunakan perintah: ~b [isi-format-topik-data-target] .
 <img width="462" height="101" alt="image" src="https://github.com/user-attachments/assets/614ecd35-73fc-4b74-b1c0-8834673a2fab" />
 
+
 # Hasil Dokumentasi
 # Dokumentasi proses simulasi serangan Data Tampering [Data Intercepted]
 <img width="670" height="48" alt="image" src="https://github.com/user-attachments/assets/22488fbc-4126-49fd-834d-adb71e537d63" />
