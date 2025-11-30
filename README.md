@@ -33,7 +33,7 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
 <img width="677" height="59" alt="image" src="https://github.com/user-attachments/assets/5b8db702-6468-45e9-9408-62bb78835a91" />
 
 # Dokumentasi proses yang terjadi setelah Data dimanipulasi [UI dashboard Subscriber]
-<img width="702" height="339" alt="image" src="https://github.com/user-attachments/assets/9ecc8818-f55d-406b-9144-2fad84da8717" />
+<img width="704" height="340" alt="hasil-uji-serangan-data-tampering-pada-dashboard-subscriber" src="https://github.com/user-attachments/assets/139e7f43-eb9a-48fb-9ea2-8457f987eeff" />
 
 # Dokumentasi subscriber melakukan request pengiriman ulang data ke publisher [Log Data Subscriber]
 <img width="214" height="478" alt="image" src="https://github.com/user-attachments/assets/9532a5b0-e02f-4d2d-8dd4-92c181834672" />
