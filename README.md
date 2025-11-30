@@ -19,8 +19,10 @@ Sebelum memulai tahapan ini, perangkat manapun yang ditargetkan diharuskan telah
    2. mitmproxy --mode transparent --showhost -p 8081 -k --tcp-hosts ".*"
 - Reference related to use MITM tools: https://github.com/nmatt0/mitmtools
   
-- Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target. dan untuk melakukan intercept pada salah satu data komunikasi diperlukan menggunakan perintah: ~b [isi-format-topik-data-target] .
+- Setelahnya akan diarahkan ke flows panel pada tools MITM Proxy, didalam flows panel tersebut akan terdapat isi komunikasi yang dilakukan oleh target.
 <img width="462" height="101" alt="image" src="https://github.com/user-attachments/assets/614ecd35-73fc-4b74-b1c0-8834673a2fab" />
+
+- dan untuk melakukan intercept pada salah satu data komunikasi tersebut, diperlukan perintah: ~b [isi-format-topik-data-target] .
 
 
 # Hasil Dokumentasi
